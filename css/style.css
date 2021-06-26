@@ -1,0 +1,234 @@
+:root {
+    --white: #fff;
+    --dark-blue: #183042;
+    --black: #001528;
+    --light-green: #468966;
+}
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+    text-decoration: none;
+    color: var(--white);
+}
+
+body{
+    background: #F0F0F0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.page-header{
+    background-color: var(--dark-blue);
+    min-height: 10%;
+    display: flex;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header h1{
+    font-weight: 400;
+}
+
+.page-header h4{
+    color: var(--light-green);
+    padding: 0.3rem 0 0.8rem 0;
+}
+
+.page-header p{
+    padding: 0 2.2rem 0 0;
+    font-size: 0.8rem;
+}
+
+.page-header-info{
+    color: #fff;
+}
+
+.profile-image img{
+    border: 3px solid var(--light-green);
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.infobar{
+    background-color: var(--black);
+}
+
+.infobar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infobar ul li {
+    color: var(--white);
+}
+.infobar ul li a{
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+}
+
+.page-main-area{
+    display: flex;
+}
+
+.page-main-area .page-col{
+    /* border: 1px solid red; */
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.info-section .info-section-header{
+    color: var(--light-green);
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.info-section .info-section-header::after{
+    content: " ";
+    background-color: var(--light-green);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+}
+.info-section-details{
+    margin-bottom: 1rem;
+}
+
+.info-section-details-orginization a{
+    color: var(--black);
+    font-weight: 400;
+}
+.info-section-details-meta{
+    display: flex;
+}
+
+.info-section-details-meta span{
+    flex: 1;
+    font-size: 0.7rem;
+    color: var(--light-green);
+}
+
+.info-section-details-meta span:nth-child(2){
+    text-align:right;
+    
+}
+
+
+
+.info-section-details-list li{
+  padding: 0.3rem 0.3rem 0.3rem 0.7rem;
+  position: relative;
+}
+
+.info-section-details-list li::before{
+    content: " ";
+    height: 7px;
+    width: 7px;
+    background-color: var(--light-green);
+    border-radius: 50%;
+    left:0;
+    top:10px;
+    position: absolute;
+}
+
+.section-details-strength > li {
+ display: flex;
+ margin: 0.5rem 0;
+}
+
+.section-details-strength > li > span:nth-child(1){
+    flex: 1;
+    font-size: 0.7rem;
+}
+
+.section-details-strength > li > span:nth-child(2){
+    flex: 2;
+}
+
+.section-details-strength > li > span > ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.section-details-strength > li > span > ul li{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    color: transparent;
+    border: 1px solid var(--light-green);
+}
+
+.section-details-strength > li > span > ul li.fill{
+    background: var(--light-green);
+}
+
+.section-details-strength.bar > li{
+    margin: 1rem 0;
+}
+
+.section-details-strength.bar > li > span > ul{
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.section-details-strength.bar > li > span > ul li{
+    border-radius: 0;
+    border: 0;
+    width: 30px;
+}
+
+.info-section-details-org{
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+.info-section-details-org small{
+    display: block;
+    color: #ABABAB;
+    font-size: 0.6rem;
+}
+
+.page-wrapper{
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--white)
+}
+
+
+@media (max-width: 1140px){
+    .page-wrapper{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    .page-wrapper{
+        width: 100%;
+    }
+
+    .page-main-area{
+        flex-direction: column;
+    }
+}
